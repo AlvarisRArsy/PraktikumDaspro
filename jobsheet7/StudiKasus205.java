@@ -34,17 +34,38 @@ public class StudiKasus205 {
                 } else if (jumlahDokumen==0) {
                     System.out.println("Status: Dokumen tidak lengkap (kurang  4 dokumen). Dana penghargaan tidak diberikan.");
                 } else {
-                    System.out.println("Status: Jumlah Dokumen tidak valid.");
-                    
+                    System.out.println("Status: Jumlah Dokumen tidak valid.");    
                 }
                     
             } else {
                 System.out.println("Status: Peringkat juara harus 1, 2, dan 3, selain itu tidak diberikan dana penghargaan.");
             }
             
+        } else if (jeniskegiatan.equalsIgnoreCase("PKM")) {
+            if (statuspendanaan==1) {
+                if (jumlahDokumen==4) {
+                    System.out.println("Status: Dokumen lengkap, Dana penghargaan akan diberikan");
+                } else if (jumlahDokumen==3) {
+                    System.out.println("Status: Dokumen tidak lengkap (kurang  1 dokumen). Dana penghargaan tidak diberikan.");
+                } else if (jumlahDokumen==2) {
+                    System.out.println("Status: Dokumen tidak lengkap (kurang  2 dokumen). Dana penghargaan tidak diberikan.");
+                } else if (jumlahDokumen==1) {
+                    System.out.println("Status: Dokumen tidak lengkap (kurang  3 dokumen). Dana penghargaan tidak diberikan.");
+                } else if (jumlahDokumen==0) {
+                    System.out.println("Status: Dokumen tidak lengkap (kurang  4 dokumen). Dana penghargaan tidak diberikan.");
+                } else {
+                    System.out.println("Status: Jumlah Dokumen tidak valid.");
+                }
+
+            } else if (statuspendanaan==0) {
+                System.out.println("Anda tidak lolos status pendanaan, dana penghargaan tidak diberikan");
+            } else {
+                System.out.println("kode tidak valid, silahkan masukkan angka 1 (lolos) atau 0 (tidak lolos) ");
+            }
+                   
         } else {
-            
+            System.out.println("Jenis kegiatan yang mendapaatkan dana penghargaan hanya BELMAWA/BAKORMA/Mandiri/PKM, selain itu tidak mendapatkan dana penghargaan. ");
+        } 
         }
     }
     
-}
