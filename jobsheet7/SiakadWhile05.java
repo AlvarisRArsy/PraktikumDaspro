@@ -3,10 +3,12 @@ import java.util.Scanner;
 public class SiakadWhile05 {
     public static void main(String[] args) {
         Scanner reyhan = new Scanner (System.in);
+        //P=5
         int nilai, jml, i=0;
         System.out.print("Masukkan jumlah mahasiswa: ");
         jml=reyhan.nextInt();
-        while (i < jml) {
+        while (i <= 20) {
+            //15 + (5mod10)
             System.out.print("Masukkan nilai mahasiswa ke-" + (i + 1) + ": ");
             nilai=reyhan.nextInt();
             if (nilai < 0 || nilai > 100) {
