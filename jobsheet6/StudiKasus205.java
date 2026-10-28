@@ -1,4 +1,4 @@
-package jobsheet7;
+package jobsheet6;
 import java.util.Scanner;
 public class StudiKasus205 {
     public static void main(String[] args) {
@@ -12,16 +12,12 @@ public class StudiKasus205 {
         jeniskegiatan=reyhan.nextLine();
         System.out.println("Masukkan jumlah dokumen yang anda upload:");
         jumlahDokumen=reyhan.nextInt();
-        System.out.println("Masukkan peringkat juara anda:");
-        peringkatJuara=reyhan.nextInt();
         System.out.println("Masukkan status pendanaan anda (1=lolos, 0=tidak lolos) ");
         statuspendanaan=reyhan.nextInt();
-        System.out.println("Nama Mahasiswa : " +nama);
-        System.out.println("jenis kegiatan(BELMAWA/BAKORMA/Mandiri/PKM/LAINNYA) : " +jeniskegiatan);
-        System.out.println("Jumlah dokumen : " +jumlahDokumen);
-        System.out.println("peringkat juara: " +peringkatJuara);
 
         if (jeniskegiatan.equalsIgnoreCase("BAKORMA")||jeniskegiatan.equalsIgnoreCase("BELMAWA")||jeniskegiatan.equalsIgnoreCase("Mandiri")) {
+            System.out.println("Masukkan peringkat juara anda:");
+            peringkatJuara=reyhan.nextInt();
             if (peringkatJuara>=1&&peringkatJuara<4) {
                 if (jumlahDokumen==4) {
                     System.out.println("Status: Dokumen lengkap, Dana penghargaan akan diberikan");
