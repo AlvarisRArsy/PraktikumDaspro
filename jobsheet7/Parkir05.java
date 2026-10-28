@@ -22,7 +22,6 @@ public class Parkir05 {
                     System.out.println("Selesai");
                     break;
                 }
-
                 if (jenis == 1) {
                     total += durasi * 3750;
                     // 2500 + (5 mod 6) × 250= 3750
