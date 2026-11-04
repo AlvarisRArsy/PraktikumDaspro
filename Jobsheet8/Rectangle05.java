@@ -8,9 +8,9 @@ public class Rectangle05 {
         System.out.print("Masukkan jumlah kolom: ");
         int kolom = reyhan.nextInt();
 
-        for (int i = 1; i <= kolom; i++) {
-            for (int j = 1; j <= baris; j++) {
-                System.out.print("*");
+        for (int i = 1; i <= baris; i++) {
+            for (int j = 1; j <= kolom; j++) {
+                System.out.print("#");
             }
             System.out.println();
         }
