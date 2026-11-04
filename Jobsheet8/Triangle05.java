@@ -8,7 +8,6 @@ public class Triangle05 {
        
        int i = 1;
        while (i <= n) {
-        System.out.print("[i=" + i + "] ");
         int j = 0;
         while (j < i) {
             System.out.print("*");
