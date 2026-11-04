@@ -2,7 +2,6 @@ package Jobsheet8;
 import java.util.Scanner;
 public class Triangle05 {
     public static void main(String[] args) {
-        //n = (2 + (5 mod 3)) 
        Scanner reyhan = new Scanner (System.in);
        System.out.print("Masukkan nilai n = ");
        int n = reyhan.nextInt();
@@ -15,6 +14,7 @@ public class Triangle05 {
             System.out.print("*");
             j++;
         }
+        System.out.println();
         i++;
        }
        reyhan.close();
