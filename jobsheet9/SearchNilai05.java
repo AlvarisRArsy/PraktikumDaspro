@@ -2,7 +2,7 @@ package jobsheet9;
 public class SearchNilai05 {
     public static void main(String[] args) {
         int[] nilai = {78, 65, 90, 55, 88, 72};
-        int key = 90;
+        int key = 100;
         boolean ditemukan = false;
 
         for (int i = 0; i < nilai.length; i++) {
