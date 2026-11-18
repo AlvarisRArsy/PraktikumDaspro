@@ -1,0 +1,22 @@
+package jobsheet9;
+import java.util.Arrays;
+
+public class ArrayBilangan05 {
+    public static void main(String[] args) {
+        //P=5
+        int[] bil = new int[4];
+        bil[0] = 5;
+        bil[1] = 13;//P+8
+        bil[2] = -6;//-(1+(Pmod7))
+        bil[3] = 25;//20+(Pmod15)
+
+        for (int i = 0; i < bil.length; i++) {
+            System.out.println("bil[" + i + "] = " + bil[i]);
+        }
+        for (int nilai : bil) {
+            System.out.println(nilai);
+        }
+        System.out.println(Arrays.toString(bil));
+    }
+    
+}
